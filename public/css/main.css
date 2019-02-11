@@ -1,0 +1,132 @@
+@import 'base.css';
+
+html {
+    background-image: linear-gradient(rgba(27, 136, 155, 0.582), rgba(29, 158, 115, 0.596));
+}
+
+#modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* background-image : linear-gradient(
+        rgba(27, 136, 155, 0.582), rgba(29, 158, 115, 0.596)
+    ); */
+    background-color: rgba(30, 30, 30, 0.9);
+    /* display: none; */
+    z-index: 200;
+}
+
+#modal_cont {
+    width: 80%;
+    margin: 20% auto;
+    color: #f1f1f1;
+}
+
+#modal_cont h2 {
+    color: rgb(248, 212, 146);
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+ul.navs {}
+
+li.nav {
+    width: 50%;
+    float: left;
+    padding-top: 0.75rem;
+    padding-bottom: calc(0.75rem + 5px);
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: none;
+    cursor: pointer;
+    background-color: #fff;
+    position: relative;
+}
+
+.cont {
+    border: 5px solid #666;
+    height: calc(100% - 10px - 3.75rem);
+    margin-top: -5.5px;
+    position: relative;
+    z-index: 50;
+    overflow-y: auto;
+}
+
+li.nav:first-child {
+    z-index: 100;
+}
+
+#city {
+    font-size: 1.5rem;
+}
+
+#weekly {
+    font-size: 1.25rem;
+}
+
+#weekly > div > ul {
+    border-bottom: 2px solid #ccc;
+    padding: 5%;
+}
+
+#weekly .icon{
+    width: 20%;
+    float: left;
+}
+
+#weekly .cont{
+    widows: 70%;
+    float: right;
+}
+#daily {
+    font-size: 1.5rem;
+}
+
+#daily .icon {
+    width: 50%;
+    margin: 2rem auto;
+    max-width: 200px;
+}
+
+#daily>ul {
+    margin-top: 10%;
+}
+
+#daily li {
+    width: 50%;
+    margin: auto;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#daily .city_name {
+    text-align: center;
+    font-size: 1.5em;
+    color: royalblue;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1024px) {
+    #daily li {
+        width: 60%;}
+}
+
+@media screen and (max-width:768px) {
+    #daily li {
+        width: 70%;}
+}
+
+@media screen and (max-width:480px) {
+    #daily li {
+        width: 80%;}
+}
+
+@media screen and (max-width:320px) {
+    #daily li {
+        width: 90%;}
+}
